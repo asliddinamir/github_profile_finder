@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #212121 !important;
+}
+
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 1.5rem;
+}
+@media(max-width:490px){
+    .title{
+        font-size: 2rem;
+    }
+}
+
+.input{
+    width: 80%;
+    position: relative;
+    right:0;
+}
+.input input{
+    width: 100%;
+    padding: 10px;
+    padding-right: 0;
+    background: #ccc;
+    border-radius: 20px;
+    border: none;
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.input input::placeholder{
+    font-size: 16px;
+    font-weight: 600;
+}
+.input input:focus{
+    outline: none;
+    background: rgb(255, 253, 253);
+}
+#btn{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 13px;
+    width: 7%;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    right: -14px;
+    top: 0;
+    border: none;
+    background-color: rgb(14, 84, 150);
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: rgb(52, 52, 197);
+}
+@media(max-width:991px){
+    #btn{
+        width: 20%;
+    }
+}
+
+.modal{
+    background-color: rgb(20, 20, 32);
+    margin-top: 2rem;
+    display: flex;
+    width: 80%;
+    border-radius: 20px;
+}
+.modal img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 1.5rem;
+}
+
+.base{
+    margin: 1rem;
+}
+.base .info{
+    padding: 25px;
+}
+.info .name{
+    color: aliceblue;
+    padding-bottom: 10px;
+}
+.info a{
+    color: rgb(147, 147, 226);
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.info p{
+    color: white;
+    padding-top: 10px;
+}
+
+.stats{
+    background-color: rgb(37, 46, 65);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0 1rem;
+}
+
+.stats h4{
+    color: white;
+}
+.stats span{
+    color: #eee;
+}
+
+.other{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+    
+}
+.other h5{
+    display: inline;
+    padding-left: 10px;
+    color: white;
+}
+.other i{
+    display: inline;
+    color: rgb(26, 95, 173);
+}
+.other .a{
+    padding: 10px;
+}
+.other .b{
+    padding: 10px;
+}
+.site{
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.bio{
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 30px;
+    margin-top: 1rem;
+}
+
+@media(max-width:810px){
+    .container{
+        width: 100%;
+    }
+    .modal{
+        width: 90%;
+    }
+    .input{
+        width: 90%;
+    }
+}
+@media(max-width:679px){
+    .img{
+        text-align: center;
+    }
+    .modal{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .base{
+        margin: 0;
+    }
+    .stats{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .stats h4{
+        font-size: 12px;
+    }
+    .other{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
